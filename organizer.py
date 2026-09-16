@@ -87,8 +87,8 @@ def build_parser() -> argparse.ArgumentParser:
         prog="organizer",
         description="按文件类型自动归类目录下的文件",
     )
-    parser.add_argument("--dir", default=".", help="要整理的目录（默认当前目录）")
-    parser.add_argument("--dry-run", action="store_true",
+    parser.add_argument("-d", "--dir", default=".", help="要整理的目录（默认当前目录）")
+    parser.add_argument("-n", "--dry-run", action="store_true",
                         help="只预览会怎么移动，不实际执行")
     return parser
 
